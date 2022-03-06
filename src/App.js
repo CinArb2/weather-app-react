@@ -4,13 +4,14 @@ import AllowLoc from './components/AllowLoc/AllowLoc';
 import WeatherCard from './components/WeatherCard/WeatherCard';
 import ReactLoading from "react-loading";
 import Blocked from './components/Blocked/Blocked';
-import apiKey from './apiKey';
 
 
 function App() {
   const [petition, setPetition] = useState('initialMessage')
   const [data, setData] = useState({})
-  const [degree, setDegree] = useState({far: 0, isFh: false})
+  const [degree, setDegree] = useState({ far: 0, isFh: false })
+  const apiKey = '9b17d7be3dc82eaf6d86688e7d03c770';
+
   const url = (coord) => `https://api.openweathermap.org/data/2.5/weather?lat=${coord.lat}&lon=${coord.long}&appid=${apiKey}`
 
   const successCb = (position) => {
