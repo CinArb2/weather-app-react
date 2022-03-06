@@ -1,0 +1,143 @@
+.weather-card{
+  width: min(80%, 400px);
+  padding: 4rem 2rem;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba(51, 57, 148, 0.185);
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+}
+
+.temperature{
+  background-color: transparent;
+  border: none;
+  color: rgb(75 75 75);
+  font-size: 7rem;
+  padding-top: 2rem;
+  font-family: 'Hubballi', cursive;
+  position: relative; 
+}
+
+.temperature::after{
+  content: '°';
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+}
+
+.box-btn-temperature{
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.box-btn-temperature::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background-color: rgb(129, 129, 129);
+  left: 50%;
+  top: 1px;
+}
+
+.btn-temperature{
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #c6c6c6;
+  padding-inline: 0.7rem;
+}
+
+.btn-temperature.active{
+  color: rgb(75 75 75);
+}
+
+.city{
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.icon_weather-box{
+  width: 50%;
+  margin: 1rem auto;
+}
+
+
+
+.icon_weather{
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.weather_states{
+  display: block;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+.temp_info{
+  width: 165px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.temp_info::before{
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+.temp_info::after{
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: black;
+  position: absolute;
+  bottom: 3px;
+}
+
+.box{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  position: relative;
+}
+
+
+.wind::before{
+  content: '';
+  background-image: url('https://img.icons8.com/ios/50/000000/wind--v1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -6px;
+  left: -35px;
+  height: 30px;
+  width: 30px;
+}
+
+.hum::before{
+  content: '';
+  background-image: url('https://img.icons8.com/ios/50/000000/drop-of-blood--v2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2px;
+  left: -30px;
+  height: 20px;
+  width: 20px;
+}
+
+.icon_not-found{
+  width: 200px;
+  margin: 0 auto;
+}
