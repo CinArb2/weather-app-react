@@ -5,7 +5,6 @@ import WeatherCard from './components/WeatherCard/WeatherCard';
 import ReactLoading from 'react-loading';
 import Blocked from './components/Blocked/Blocked';
 
-
 function App() {
   const [petition, setPetition] = useState('initialMessage')
   const [data, setData] = useState({})
