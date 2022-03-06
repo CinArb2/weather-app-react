@@ -2,7 +2,7 @@ import { useState} from 'react';
 import './App.css';
 import AllowLoc from './components/AllowLoc/AllowLoc';
 import WeatherCard from './components/WeatherCard/WeatherCard';
-import ReactLoading from "react-loading";
+import ReactLoading from 'react-loading';
 import Blocked from './components/Blocked/Blocked';
 
 
