@@ -1,9 +1,9 @@
 import { useState} from 'react';
 import './App.css';
-import AllowLoc from './components/AllowLoc/AllowLoc';
-import WeatherCard from './components/WeatherCard/WeatherCard';
+import AllowLoc from './components/AllowLoc';
+import WeatherCard from './components/WeatherCard';
 import ReactLoading from 'react-loading';
-import Blocked from './components/Blocked/Blocked';
+import Blocked from './components/Blocked';
 
 function App() {
   const [petition, setPetition] = useState('initialMessage')

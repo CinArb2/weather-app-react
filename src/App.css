@@ -7,3 +7,161 @@ main{
   padding-block: 2rem;
 }
 
+.Card{
+  width: min(80%, 400px);
+  padding: 4rem 1rem;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba(51, 57, 148, 0.185);
+  backdrop-filter: blur( 5.5px );
+  -webkit-backdrop-filter: blur( 5.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+}
+
+.Card_img{
+  width: 70%;
+}
+
+.Card_button{
+  font-family: inherit;
+  font-size: 1.5rem;
+  display: block;
+  margin: 2rem auto 0;
+  background-color: #1d96dd;
+  color: white;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Card_markUp{
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-block: 1rem;
+}
+
+.Card_city{
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.Card_temperature{
+  color: rgb(75 75 75);
+  font-size: 7rem;
+  padding-top: 2rem;
+  font-family: 'Hubballi', cursive;
+  position: relative; 
+}
+
+.Card_temperature::after{
+  content: '°';
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+}
+
+.Card_box-btn-temperature{
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.Card_btn-temperature{
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #c6c6c6;
+  padding-inline: 0.7rem;
+}
+
+.Card_btn-temperature::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background-color: rgb(129, 129, 129);
+  left: 50%;
+  top: 1px;
+}
+
+.Card_btn-temperature.active{
+  color: rgb(75 75 75);
+}
+
+.Card_icon-weather{
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.Card_weather-states{
+  display: block;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+.Card_temp-info{
+  padding-left: 1.5rem;
+  width: 165px;
+  margin: auto;
+  position: relative;
+}
+
+.Card_temp-info::before{
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: rgb(135 134 134);
+  position: absolute;
+  top: 4px;
+  left: 50%;
+}
+
+.Card_temp-info::after{
+  content: '';
+  width: 2px;
+  height: 15px;
+  background-color: rgb(135 134 134);
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+}
+
+.Card_box{
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  position: relative;
+}
+
+
+.Card_box-wind::before{
+  content: '';
+  background-image: url('https://img.icons8.com/ios/50/000000/wind--v1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -6px;
+  left: -35px;
+  height: 30px;
+  width: 30px;
+}
+
+.Card_box-hum::before{
+  content: '';
+  background-image: url('https://img.icons8.com/ios/50/000000/drop-of-blood--v2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2px;
+  left: -30px;
+  height: 30px;
+  width: 30px;
+}
+
+
